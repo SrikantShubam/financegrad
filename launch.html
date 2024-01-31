@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-2">
+          <img loading="lazy" srcset="./finance_grad_icon.png" class="image" />
+  
+        </header>
+        <div class="div-4">
+          <div class="div-5">
+            <div class="column">
+              <div class="div-6">
+                <div class="div-7">Coming Soon...</div>
+                <div class="div-8">Kickstart your financial journey with thefinancegrad</div>
+                <div class="div-9">Click here now</div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="div-10">
+                <div class="div-11" id="days">23 days <br /></div>
+                <div class="div-12" id="hours">14 hours <br /></div>
+                <div class="div-13" id="minutes">17 minutes <br /></div>
+                <div class="div-13" id="seconds">17 seconds <br /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Set the target date and time for the countdown
+        const targetDate = new Date("2024-02-20T00:00:00").getTime();
+      
+        // Update the countdown every 1 second
+        const countdownInterval = setInterval(function() {
+          // Get the current date and time
+          const currentDate = new Date().getTime();
+      
+          // Calculate the remaining time in milliseconds
+          const remainingTime = targetDate - currentDate;
+      
+          // Calculate days, hours, and minutes
+          const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+          // Update the HTML elements with the countdown values
+          document.getElementById("days").innerHTML = days + " days <br />";
+          document.getElementById("hours").innerHTML = hours + " hours <br />";
+          document.getElementById("minutes").innerHTML = minutes + " minutes <br />";
+          document.getElementById("seconds").innerHTML = seconds + " seconds <br />";
+          // If the countdown is over, clearInterval to stop updating
+          if (remainingTime <= 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("days").innerHTML = "0 days <br />";
+            document.getElementById("hours").innerHTML = "0 hours <br />";
+            document.getElementById("minutes").innerHTML = "0 minutes <br />";
+          }
+        }, 1000); // Update every 1000 milliseconds (1 second)
+      </script>
+      <style>
+        .main-container {
+          align-items: center;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          padding: 50px 80px;
+        }
+      
+        @media (max-width: 430px) {
+          .main-container {
+            padding: 0 .5rem;
+          }
+        }
+      
+        .header-2 {
+          align-self: start;
+          display: flex;
+          gap: 7px;
+          margin: 30px 0 0 71px;
+        }
+      
+        @media (max-width: 430px) {
+          .header-2 {
+            margin-left: 10px;
+          }
+        }
+      
+        .image {
+          aspect-ratio: 0.96;
+          object-fit: contain;
+          object-position: center;
+          width: 120px;
+          overflow: hidden;
+          align-self: start;
+          max-width: 100%;
+        }
+      
+        .header-3 {
+          color: #400374;
+          letter-spacing: 1.05px;
+          font: 400 17px/17px Bai Jamjuree, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+      
+        .div-4 {
+          align-self: center;
+          margin-top: 112px;
+          width: 100%;
+          max-width: 978px;
+        }
+      
+        @media (max-width: 430px) {
+          .div-4 {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+        }
+      
+        .div-5 {
+          gap: 20px;
+          display: flex;
+        }
+      
+        @media (max-width: 430px) {
+          .div-5 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+      
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 56%;
+          margin-left: 0px;
+          order: 1;
+        }
+      
+        @media (max-width: 430px) {
+          .column {
+            width: 100%;
+            order: 2;
+            margin-bottom: 14rem;
+          }
+        }
+      
+        .div-6 {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+      
+        @media (max-width: 430px) {
+          .div-6 {
+            max-width: 100%;
+          }
+        }
+      
+        .div-7 {
+          color: #000;
+          letter-spacing: 5.76px;
+          font: 400 96px/92px Roboto, sans-serif;
+        }
+      
+        @media (max-width: 430px) {
+          .div-7 {
+            max-width: 100%;
+            font-size: 60px;
+            line-height: 66px;
+          }
+        }
+      
+        .div-8 {
+          color: #000;
+          letter-spacing: 2.16px;
+          margin-top: 32px;
+          font: 400 36px/43px Roboto, sans-serif;
+        }
+      
+        @media (max-width: 430px) {
+          .div-8 {
+            max-width: 100%;
+          }
+        }
+      
+        .div-9 {
+          color: #fff;
+          letter-spacing: 1.92px;
+          white-space: nowrap;
+          justify-content: center;
+          border-radius: 10px;
+          background-color: var(--material-theme-sys-light-on-secondary-fixed, #141b2c);
+          align-self: start;
+          margin-top: 32px;
+          padding: 10px;
+          font: 400 32px/120% Roboto, sans-serif;
+        }
+      
+        @media (max-width: 430px) {
+          .div-9 {
+            white-space: initial;
+          }
+        }
+      
+        .column-2 {
+     
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 44%;
+          margin-left: 20px;
+        order: 2;
+        background-image: url('./q.afa93098.svg');
+        background-size: auto;
+    
+        background-repeat: no-repeat;
+        }
+      
+        @media (max-width: 430px) {
+          .column-2 {
+            width: 100%;
+            order: 1;
+            margin-bottom: 4rem;
+          }
+        }
+      
+        .div-10 {
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+          font-size: 64px;
+          color: #000;
+          font-weight: 400;
+          letter-spacing: 3.84px;
+          margin: auto 0;
+        }
+      
+        @media (max-width: 430px) {
+          .div-10 {
+            max-width: 100%;
+            margin-top: 40px;
+            font-size: 40px;
+          }
+        }
+      
+        .div-11 {
+          font-family: Roboto, sans-serif;
+          line-height: 61px;
+        }
+      
+        @media (max-width: 430px) {
+          .div-11 {
+            max-width: 100%;
+            font-size: 40px;
+            line-height: 42px;
+          }
+        }
+      
+        .div-12 {
+          font-family: Roboto, sans-serif;
+          line-height: 61px;
+          margin-top: 36px;
+        }
+      
+        @media (max-width: 430px) {
+          .div-12 {
+            max-width: 100%;
+            font-size: 40px;
+            line-height: 42px;
+          }
+        }
+      
+        .div-13 {
+          font-family: Roboto, sans-serif;
+          line-height: 61px;
+          margin-top: 36px;
+        }
+      
+        @media (max-width: 430px) {
+          .div-13 {
+            max-width: 100%;
+            font-size: 40px;
+            line-height: 42px;
+          }
+        }
+      </style>
+</body>
+</html>

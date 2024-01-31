@@ -7,7 +7,11 @@ html {
   body {
     margin: 0;
   }
+  .icon {
+    width: 20px;
+    height: 20px;
   
+  }
   article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
   }
@@ -2939,7 +2943,9 @@ html {
     padding: 64px 5%;
     position: relative;
   }
-  
+  footer{
+    margin-top: 4rem;
+  }
   .f-footer-social {
     width: 48px;
     height: 48px;
@@ -4602,7 +4608,9 @@ html {
   .brix---mg-bottom-48px {
     margin-bottom: 48px;
   }
-  
+  #faq{
+    margin-top: 4rem;
+  }
   .brix---section {
     color: var(--elements-webflow-library--neutral--100);
     padding-top: 0;
@@ -6391,7 +6399,91 @@ html {
     padding: 24px 5%;
     display: flex;
   }
+  .container-2 {
+    width: 100%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centered-heading-2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  }
   
+  .centered-subheading-2 {
+    max-width: 530px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-slider-wrapper-2 {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 50px;
+  }
+  
+  .team-slide-wrapper-2 {
+    width: 30%;
+    margin-right: 5%;
+  }
+  
+  .team-block-2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 24px;
+  }
+  
+  .team-member-image-two-2 {
+    border-radius: 17px;
+    margin-bottom: 18px;
+  }
+  
+  .team-block-info-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+  }
+  
+  .team-member-name-two-2 {
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .team-member-text-2 {
+    margin-bottom: 20px;
+  }
+  
+  .text-link-arrow-2 {
+    color: #1a1b1f;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .arrow-embed-2 {
+    margin-left: 2px;
+    display: flex;
+  }
+  
+  .team-slider-arrow-2 {
+    display: none;
+  }
+  
+  .team-slider-nav-2 {
+
+    margin-top: 24px;
+    font-size: 10px;
+    position: static;
+    bottom: -60px;
+  }
+
   @media screen and (min-width: 1440px) {
     .brix---grid-footer-5-cols {
       grid-column-gap: 88px;
@@ -7037,6 +7129,13 @@ html {
   
     .f-navigation-3 {
       position: relative;
+    }
+    .container-2 {
+      max-width: 728px;
+    }
+    .team-slide-wrapper-2 {
+      width: 47%;
+      margin-right: 6%;
     }
   }
   
@@ -7761,6 +7860,10 @@ html {
     .f-navigation-socials-wrapper-3 {
       display: none;
     }
+    .team-slider-2 {
+      padding: 60px 15px;
+    
+    }
   }
   
   @media screen and (max-width: 479px) {
@@ -8160,6 +8263,14 @@ html {
     .f-navigation-button-3 {
       display: none;
     }
+    .centered-heading-2 {
+      margin-bottom: 24px;
+    }
+  
+    .team-slide-wrapper-2 {
+      width: 100%;
+      margin-right: 0%;
+    }
   }
   
   #w-node-_90620704-5af2-9dbf-343f-5c15a42c39d7-a42c39cf {
@@ -8198,3 +8309,12 @@ html {
     font-style: normal;
     font-display: swap;
   }
+
+
+
+  .team-slider-2 {
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #e4ebf3;
+    padding: 80px 30px;
+    position: relative;
+  }  

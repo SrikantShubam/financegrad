@@ -1511,7 +1511,7 @@
       })),
       ce(function (e) {
         return (
-          (e.innerHTML = "<a href='#' style='display:none;'></a>"),
+          (e.innerHTML = "<a href='#'></a>"),
           "#" === e.firstChild.getAttribute("href")
         );
       }) ||
